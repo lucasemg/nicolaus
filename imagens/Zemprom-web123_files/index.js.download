@@ -1,0 +1,49 @@
+$(function() {
+    var indexContent = $("#index-content");
+
+    function validateLogin() {
+        var emailStorage = localStorage.getItem('email');
+    
+        if (emailStorage == null) {
+            $.ajax({
+                url: 'view.login.html',
+                success: function(dataHtml) {
+                    $("body").addClass("login");
+                    indexContent.html(dataHtml);
+                    $("#email").focus();
+
+                    $("#form_login").on("click", ".submit", function(e) {
+                        e.preventDefault();
+                        
+                        var email = $("#email").val();
+                        var password = $("#password").val();
+
+                        $.ajax({
+                            url: 'process/form.login.php',
+                            method: 'post',
+                            data: {email: email, password: password},
+                            success: function(dataJSON) {
+                                var loginRet = JSON.parse(dataJSON);
+
+                                if (loginRet.status == 1) {
+                                    $.ajax({
+                                        url: 'panel.admin.html',
+                                        success: function (dataHtml) {
+                                            $("body").removeClass("login");
+                                            indexContent.html(dataHtml);
+                                        }
+                                    });
+                                }
+                            }
+                        });
+
+                    });
+                }
+            });
+        } else {
+            console.log("1");
+        }
+    }
+    
+    validateLogin();
+});

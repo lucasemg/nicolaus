@@ -1,0 +1,314 @@
+body {
+    margin: 10px 50px;
+    background-image: url('../imagens/backgound.png');
+    background-size: 4%;
+    background-color: #2d2d2d;
+    
+}
+
+#conteudo-principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#num-copias {
+    position: relative;
+}
+
+#quadrado-laranja {
+    background-color: #ff8400;
+    border-radius: 15px;
+    width: 130px;
+    height: 65px;
+    position: absolute;
+    top: 17px;
+    left: 7px;
+    z-index: -1;
+}
+
+#seta{
+    margin: 0px;
+    width: 80px;
+    filter: invert(100%);
+    transform: rotate(-90deg);
+}
+
+#seta-esquerda{
+    margin: 0px;
+    width: 70px;
+    filter: invert(100%);
+    transform: rotate(180deg);  
+}
+
+#seta-direita{
+    margin: 0px;
+    width: 70px;
+    filter: invert(100%);
+}
+
+#logo {
+    width: 50px;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    filter: invert(100%);
+}
+
+
+
+/*-------Tipografia------*/
+
+#texto-branco {
+    display: inline;
+    font-family: 'Arvo', serif;
+    font-size: 18px;
+    margin-bottom: 2px;
+    color: white;
+    font-weight: 700;
+    
+
+}
+
+#texto-preto {
+    width: 100px;
+    padding: 5px 14px; 
+    margin-top: 10px; 
+    margin-bottom: 2px;
+    font-family: 'Arvo', serif;
+    border-radius: 15px;
+    font-size: 44px;
+    color: black;
+    font-weight: 700;
+    background: white;
+    box-shadow: 9px 7px 80px rgba(0, 0, 0, 0.3);
+
+}
+
+#texto-preto2 {
+    padding: 5px 14px; 
+    margin-top: 10px; 
+    margin-bottom: -20px;
+    font-family: 'Arvo', serif;
+    border-radius: 15px;
+    font-size: 30px;
+    color: black;
+    font-weight: 700;
+    background: white;
+    border-bottom: 8px solid rgb(230, 230, 230);
+} 
+
+#dowload {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 40px;     
+    background: rgba(0, 0, 0, 0.3);
+}
+
+#dowload a {
+    text-decoration: none;
+}
+
+
+
+#texto-download {
+    width: 330px;
+    padding: 10px 14px; 
+    font-family: 'Arvo', serif;
+    border-radius: 15px;
+    font-size: 30px;
+    color: white;
+    font-weight: 700;
+    background-image: linear-gradient(to right, #ff8400, #d06610);
+    border-bottom: 5px solid white;
+}
+
+#vou-mandar {
+    margin: -30px 0px;
+}
+
+#vou-mandar p {
+    font-family: 'Arvo', serif;
+    font-size: 50px;
+    color: white;
+    font-weight: 700;
+}
+
+#sessão-livro {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#livro {
+    width: 700px;
+    margin: 0px;
+}
+
+.seta-livro {
+    width: 100px;
+    filter: invert(100%);
+    transform: rotate(90deg);
+}
+
+#insta {
+    display: inline;
+    font-family: 'Arvo', serif;
+    font-size: 15px;
+    color: white;
+    font-weight: 700;
+    text-decoration: none;    
+
+}
+
+
+/*-----------PÁGINA OBRIGADO -------------*/
+
+#avatar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+#avatar-pic {
+    width: 100px;
+    border-radius: 50%;
+    border: 6px solid white;
+    transition: 0.4s;
+}
+
+
+#avatar-pic:hover {
+    width: 110px;
+    transition: 0.4s;
+}
+
+#avatar-traco {
+    width:170px;
+    margin: -10px;
+}
+
+#avatar p {
+    font-family: 'Arvo', serif;
+    font-size: 15px;
+    color: white;
+    font-weight: 700;
+}
+
+#dowload-2 {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 10px;
+}
+
+#dowload-2 a {
+    text-decoration: none;
+}
+
+#texto-download-2 {
+    width: 550px;
+    padding: 10px 14px; 
+    font-family: 'Arvo', serif;
+    border-radius: 15px;
+    font-size: 30px;
+    color: white;
+    font-weight: 700;
+    background-image: linear-gradient(to right, #ff8400, #d06610);
+    transition: 0.4s;
+}
+
+#texto-download-2:hover {
+    font-size: 33px;
+    padding: 13px 17px; 
+    transition: 0.4s;
+}
+
+
+
+#div-celular {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#celular {
+    width: 140px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
+/*----------EBOOK ENVIADO-------------*/
+
+#cabecalho {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#titulo-enviado {
+    width: 430px;
+    padding: 2px 14px; 
+    font-family: 'Arvo', serif;
+    border-radius: 15px;
+    font-size: 45px;
+    color: white;
+    font-weight: 700;
+    background-image: linear-gradient(to right, #ff8400, #d06610);
+}
+
+
+
+#cabecalho p {
+    font-family: 'Arvo', serif;
+    font-size: 15px;
+    margin-top: -25px;
+    margin-bottom: 0px;
+    color: white;
+}
+
+.laranjo {
+ color: #ff8400;
+}
+
+#titulo-video {
+    display: flex;
+    flex-direction: row;
+    margin-top: -10px;
+    align-items: flex-end; 
+    font-family: 'Arvo', serif;
+    color: white;
+    font-size: 20px;
+    text-align: left;
+}
+
+#titulo-video img {
+    margin-bottom: 10px;
+    height: 100px;
+    transform: rotate(-90deg);
+    filter: invert(100%);
+}
+
+iframe {
+    border: 3px solid white;
+    margin-bottom: 50px;
+    width: 660px;
+    height: 415px;
+}
+
+
+
