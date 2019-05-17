@@ -261,7 +261,7 @@ body {
 }
 
 #titulo-enviado {
-    width: 430px;
+    width: 380px;
     padding: 2px 14px; 
     font-family: 'Arvo', serif;
     border-radius: 15px;
@@ -309,6 +309,178 @@ iframe {
     width: 660px;
     height: 415px;
 }
+
+#barra-div {
+    width: 18%; 
+    height: 20px; 
+    border-bottom: 1px solid white; 
+    text-align: center;
+}
+
+
+@media (max-width: 750px) and (orientation: portrait) {
+
+    iframe {
+        width: 460px;
+        height: 265px;
+    }
+
+    #texto-download-2 {
+        width: 350px;
+        font-size: 20px;
+    }
+    
+    #texto-download-2:hover {
+        font-size: 20px;
+        padding: 13px 17px; 
+        transition: 0.4s;
+    }
+    
+    
+
+}
+
+@media (max-width: 750px) and (orientation: landscape) {
+
+    iframe {
+        width: 330px;
+        height: 207px;
+    }
+
+    #texto-download-2 {
+        width: 180px;
+        font-size: 20px;
+    }
+    
+    #texto-download-2:hover {
+        font-size: 20px;
+        padding: 13px 17px; 
+        transition: 0.4s;
+    }
+    
+    
+
+}
+
+@media (max-width: 480px) and (orientation: portrait) {
+
+    #texto-branco {
+        font-size: 15px;        
+    }
+
+    #texto-preto {
+        font-size: 22px;
+        padding: 2px 0px;
+        border-radius: 8px; 
+    }
+
+    #quadrado-laranja {
+        width: 100px;
+        height: 30px;
+        border-radius: 8px; 
+    }
+
+    #seta {
+        width: 60px;
+    }
+
+    #texto-preto2 {
+        padding: 5px 8px; 
+        margin-bottom: -23px;
+        border-radius: 10px;
+        font-size: 20px;
+    } 
+
+    #texto-download {
+        width: 160px;
+        font-size: 25px;
+    }
+
+    #seta-esquerda{
+        width: 50px; 
+    }
+    
+    #seta-direita{
+        width: 50px;
+    }
+
+    #vou-mandar {
+        margin-top: -20px;
+    }
+
+    #vou-mandar p {
+        font-size: 30px;
+    }
+
+    #livro {
+        width: 400px;
+    }
+
+    #insta {
+        
+        font-size: 10px;
+    
+    }
+
+    #logo {
+        width: 30px;
+    }
+
+    #titulo-enviado {
+        width: 200px;
+        padding: 2px 8px; 
+        border-radius: 10px;
+        font-size: 20px;
+    }
+
+    #cabecalho p {
+        font-family: 'Arvo', serif;
+        font-size: 15px;
+        margin-top: -5px;
+        margin-bottom: 0px;
+        color: white;
+    }
+
+    #barra-div {
+        width: 100%; 
+        height: 20px; 
+        border-bottom: 1px solid white; 
+        text-align: center;
+    }
+
+    #titulo-video {
+        margin-top: 0px;
+        align-items: flex-end;
+        font-size: 10px;
+        text-align: CENTER;
+    }
+
+    #seta-envio {
+        display: none;
+    }
+
+    iframe {
+    border: 3px solid white;
+    margin-top: 10px;
+    width: 248px;
+    height: 156px;
+}
+
+#texto-download-2 {
+    width: 180px;
+    font-size: 20px;
+}
+
+#texto-download-2:hover {
+    font-size: 20px;
+    padding: 13px 17px; 
+    transition: 0.4s;
+}
+
+    
+}
+
+
 
 
 
