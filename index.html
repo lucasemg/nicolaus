@@ -14,6 +14,44 @@
       href="https://fonts.googleapis.com/css?family=Arvo:400,700"
       rel="stylesheet"
     />
+
+    <!-- Facebook Pixel Code -->
+    <script>
+      !(function(f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function() {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js"
+      );
+      fbq("init", "2273965109346042");
+      fbq("track", "PageView");
+    </script>
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display:none"
+        src="https://www.facebook.com/tr?id=2273965109346042&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Facebook Pixel Code -->
+    
   </head>
 
   <body>
@@ -541,7 +579,7 @@
     </div>
 
     <script type="text/javascript">
-      let download = document.querySelector('#texto-download');
+      let download = document.querySelector("#texto-download");
 
       function CheckField_9WTEB(fldName, frm) {
         var fldObj = document.getElementsByName(fldName);
@@ -713,7 +751,7 @@
             encodeURIComponent(document.getElementById("fldemail_9WTEB").value);
           submitFormData_9WTEB(data);
 
-          setTimeout( function() {
+          setTimeout(function() {
             window.location.href = "envio.html";
           }, 4 * 1000);
         }
@@ -819,7 +857,7 @@
       if (bmePopupFormViewed_9WTEB != "true") {
         download.addEventListener("click", function() {
           verticalCenter_9WTEB(signupFormContainer_9WTEB);
-        },);
+        });
       }
       function debounce_9WTEB(func, wait, immediate) {
         var timeout;
@@ -873,8 +911,7 @@
         }, 250);
         window.addEventListener("resize", resizeEvent_9WTEB);
       }
-
-        </script>
+    </script>
 
     <!-- END: Signup Form Popup Code from Benchmark Email Ver 3.1 ------>
 
